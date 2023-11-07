@@ -1,0 +1,32 @@
+@import './custom-variables';
+
+.glass {
+    z-index: 1;
+    height:95vh;
+    width:90vw;
+    // background-color: rgba(255, 255, 255, 0.615);
+    // background-color: rgba(255, 255, 255, 0.310);
+    background-color: rgba(255, 255, 255, 0.210);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 3rem;
+    border: 1px solid rgba(238, 238, 238, 0.341);
+    // box-shadow: 0 0 15px 3px #fbfbfb69;
+};
+.glassp{
+    width:100vw;
+    height: 100vh;
+}
+
+.myvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+
+
+

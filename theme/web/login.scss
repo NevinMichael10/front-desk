@@ -1,0 +1,85 @@
+@import './custom-variables';
+
+.loginbg {
+    background-image: url("./image/abstractbg.jpeg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: -1;
+}
+
+.loginbg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: 105vw 105vh;
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
+
+.loginglass {
+    z-index: 3;
+    min-height: 90vh;
+    background-color: rgba(255, 255, 255, 0.615);
+    backdrop-filter: blur(20px);
+    border-radius: 3rem;
+    border: 1px solid rgba(238, 238, 238, 0.937);
+    box-shadow: 0 0 15px 3px #fbfbfb69;
+};
+
+
+.loginbox {
+  border-radius: 20px;
+  border-style: none;
+  width: 250px;
+}
+
+.loginbox:focus{
+  border-radius: 20px;
+  border-style: none;
+}
+
+.loginbtn{
+    border-radius: 20px;
+    height: 40px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 250px;
+}
+
+.loginboxlabel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.weltxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.weltxtbtm{
+color: gray;
+}
+
+.inputbox{
+.form-control{
+  border-radius: 20px;
+  border-style: none;
+  width: 250px; 
+}
+}
+
+.inputbox2{
+.form-control{
+  border-radius: 20px;
+  border-style: none;
+  // width:600px;
+}
+}
