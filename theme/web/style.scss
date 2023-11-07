@@ -18,6 +18,13 @@
     height: 100vh;
 }
 
+/*change this if need to put image as background instead of video*/
+
+// .homebg{
+//     background-image: url("./image/loginbg.jpg");
+//     background-size: cover;
+
+// }
 .myvideo {
   position: fixed;
   right: 0;
@@ -26,7 +33,21 @@
   min-height: 100%;
 }
 
+.profilelistview {
+.mx-listview > ul > li:last-child {
+    border-bottom: none;
+    padding: 0;
+}
+}
 
-
-
+.profile-pic{
+    background-color: red;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    overflow: hidden;
+    img{
+        min-height: 100%;
+    }
+}
 
