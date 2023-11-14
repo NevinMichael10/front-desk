@@ -1,4 +1,5 @@
 @import './custom-variables';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .glass {
     z-index: 1;
@@ -25,6 +26,7 @@
 //     background-size: cover;
 
 // }
+
 .myvideo {
   position: fixed;
   right: 0;
@@ -41,13 +43,67 @@
 }
 
 .profile-pic{
-    background-color: red;
     height:30px;
     width:30px;
     border-radius:50%;
+    // border: 1px solid rgba(238, 238, 238, 0.341);
+    // padding: 5px;
     overflow: hidden;
     img{
         min-height: 100%;
     }
 }
+.navtxt{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.right-bgcont{
+    height:79vh;
+    img{
+       min-height: 100%;
+       object-fit: cover;
+       overflow: hidden;
+       border-bottom-right-radius: 3rem;
+       border-radius: 3rem;
+    }
+}
+
+.left-bgcont{
+    height:79vh;
+    width: auto;
+    border-bottom-left-radius: 3rem;
+    border-radius: 3rem;
+    border: 1px solid rgba(238, 238, 238, 0.341);
+}
+
+.front-desk-txt{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+    outline: none;
+}
+.front-desk-txt:hover{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+}
+.wel-txt{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.desc-txt{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+
+
 
