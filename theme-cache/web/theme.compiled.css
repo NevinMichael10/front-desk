@@ -2953,6 +2953,130 @@
   content: "\ea6d";
 }
 
+.mxwc-state-badge {
+  border-radius: 16px;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 4px 8px 4px 8px;
+  color: white;
+  white-space: nowrap;
+  display: block;
+  width: fit-content;
+}
+.mxwc-state-badge.mxwc-state-badge-success {
+  background: #3cb33d;
+}
+.mxwc-state-badge.mxwc-state-badge-primary {
+  background: #264ae5;
+}
+.mxwc-state-badge.mxwc-state-badge-warning {
+  background: #eca51c;
+}
+.mxwc-state-badge.mxwc-state-badge-danger {
+  background: #e33f4e;
+}
+.mxwc-state-badge.mxwc-state-badge-default {
+  color: #0a1325;
+  background: #e7e7e9;
+}
+
+.mxwc-timeline-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-success {
+  background: #3cb33d;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-primary {
+  background: #264ae5;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-warning {
+  background: #eca51c;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-danger {
+  background: #e33f4e;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-default {
+  background: #e7e7e9;
+}
+
+.mxwc-trancating-groupbox.mx-groupbox {
+  display: grid;
+  border: none;
+}
+.mxwc-trancating-groupbox.collapsed .mx-groupbox-header {
+  color: #0a1325;
+}
+.mxwc-trancating-groupbox .mx-groupbox-header {
+  grid-area: 1/1/2/2;
+  background: none;
+  border: none;
+  padding: 0;
+  color: transparent;
+}
+.mxwc-trancating-groupbox .mx-groupbox-header .glyphicon {
+  font-size: 200%;
+  color: #0a1325;
+}
+.mxwc-trancating-groupbox .mx-groupbox-body {
+  grid-area: 1/1/2/2;
+  border: none;
+  background: none;
+  padding: 0 35px 0 0;
+}
+
+.mx-listview[class*=lv-col] > ul {
+  flex-wrap: wrap;
+}
+
+.mxwc-dv-footer-remove-border > .mx-dataview-controls {
+  border-top: 0;
+}
+
+.mxwc-jump-to-popup {
+  min-width: 800px;
+}
+.mxwc-jump-to-popup .mx-image {
+  max-width: 32px;
+}
+.mxwc-jump-to-popup .mxwc-img-activity-placeholder {
+  opacity: 0.3;
+}
+
+.mxwc-jump-to-activity-selector select {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mxwc-lv-attachments .mx-listview-empty {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .mxwc-wiio-header {
+    position: sticky;
+    top: 0px;
+    margin-top: -24px;
+    padding-top: 24px;
+    z-index: 2;
+    background-color: #f8f8f8;
+  }
+
+  .mxwc-wiio-list {
+    position: sticky;
+    top: 137px;
+  }
+  .mxwc-wiio-list .mxwc-wiio-dropdownfilter select.form-control {
+    width: 100%;
+  }
+
+  .mxwc-wiio-detail {
+    position: sticky;
+    top: 169px;
+  }
+}
 /*!
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -26836,7 +26960,7 @@ input[type=checkbox].three-state-checkbox + .control-label {
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 3rem;
-  border: 1px solid rgba(238, 238, 238, 0.341);
+  box-shadow: 0 0 15px 3px rgba(143, 143, 143, 0.4117647059);
 }
 
 .glassp {
@@ -26845,12 +26969,18 @@ input[type=checkbox].three-state-checkbox + .control-label {
 }
 
 /*change this if need to put image as background instead of video*/
+.homebg {
+  background-image: url("./image/bg3.jpg");
+  background-size: contain;
+}
+
 .myvideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  display: none;
 }
 
 .profilelistview .mx-listview > ul > li:last-child {
@@ -26875,6 +27005,8 @@ input[type=checkbox].three-state-checkbox + .control-label {
 
 .right-bgcont {
   height: 79vh;
+  box-shadow: 0 0 8px 3px rgba(143, 143, 143, 0.4117647059);
+  border-radius: 3rem;
 }
 .right-bgcont img {
   min-height: 100%;
@@ -26889,7 +27021,8 @@ input[type=checkbox].three-state-checkbox + .control-label {
   width: auto;
   border-bottom-left-radius: 3rem;
   border-radius: 3rem;
-  border: 1px solid rgba(238, 238, 238, 0.341);
+  border: 1px solid rgba(143, 143, 143, 0.4117647059);
+  box-shadow: 0 0 7px 3px rgba(143, 143, 143, 0.6078431373) inset;
 }
 
 .front-desk-txt {
@@ -26904,10 +27037,10 @@ input[type=checkbox].three-state-checkbox + .control-label {
 .front-desk-txt:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 54px;
   letter-spacing: 2px;
   cursor: pointer;
   outline: none;
+  transition: all 300ms;
 }
 
 .wel-txt {
@@ -26920,6 +27053,51 @@ input[type=checkbox].three-state-checkbox + .control-label {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: medium;
+}
+
+body .mx-fileinput .mx-compound-control {
+  display: grid;
+  grid-template-columns: 1fr 30px 30px;
+  gap: 2px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+body .mx-fileinput .mx-compound-control .btn.mx-fileinput-upload-button {
+  background-image: url("./image/attach.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 13px auto;
+}
+
+body .mx-fileinput .mx-compound-control .btn[disabled].mx-fileinput-download-button {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+body .mx-fileinput .mx-compound-control .btn.mx-fileinput-download-button {
+  background-image: url("./image/download-file.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px auto;
+}
+
+body .mx-fileinput .mx-compound-control .btn {
+  width: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: transparent;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  opacity: 1;
+  border-style: none;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */
