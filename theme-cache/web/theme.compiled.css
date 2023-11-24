@@ -26998,6 +26998,16 @@ input[type=checkbox].three-state-checkbox + .control-label {
   min-height: 100%;
 }
 
+.profile-pic-l {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-pic-l img {
+  min-height: 100%;
+}
+
 .navtxt {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -27149,6 +27159,7 @@ body .mx-fileinput .mx-compound-control .btn {
 .scroll-inner {
   height: 74vh;
   border-radius: 2rem;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */
