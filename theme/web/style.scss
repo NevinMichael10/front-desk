@@ -47,8 +47,6 @@
     height:30px;
     width:30px;
     border-radius:50%;
-    // border: 1px solid rgba(238, 238, 238, 0.341);
-    // padding: 5px;
     overflow: hidden;
     img{
         min-height: 100%;
@@ -59,8 +57,6 @@
     height:200px;
     width:200px;
     border-radius:50%;
-    // border: 1px solid rgba(238, 238, 238, 0.341);
-    // padding: 5px;
     overflow: hidden;
     img{
         min-height: 100%;
@@ -228,4 +224,129 @@ body .mx-fileinput .mx-compound-control .btn {
 height:74vh;
 border-radius:2rem;
 overflow-x: hidden;
+}
+
+.alert-number{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 12px;
+    border-radius: 2rem;
+    min-width: 15px;
+    background-color: rgb(255, 163, 179);
+}
+
+.alert-txt-number{
+    font-size: x-small;
+    color: white;
+}
+
+.cust-btn-g{
+    border-radius: 2rem;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px;
+    border-style: none;
+    color: white;
+    background-color: #68a618;
+}
+
+.cust-btn-g:hover{
+    background-color: white;
+    color:#68a618;
+
+}
+
+.cust-btn-y{
+    border-radius: 2rem;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px;
+    border-style: none;
+    color: white;
+    background-color: #ebaa08;
+}
+
+.cust-btn-y:hover{
+    background-color: white;
+    color:#ebaa08;
+
+}
+.product-img{
+    background-color: rgb(207, 207, 207);
+    height:300px;
+    width:300px;
+    border-radius:1rem;
+    overflow: hidden;
+    transition: all ease-in-out 300ms;
+    img{
+        object-fit: contain;
+        min-height: 100%;
+    }
+} 
+
+.product-rt-cont{
+    height:300px;
+    width:400px;
+}
+
+.listv-cont{
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 0 8px 3px #8f8f8f69 ;
+    margin: 10px;
+    transition: all ease-in-out 300ms;
+}
+
+.listv-cont:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.listv-cont:hover .product-img{
+    background-color: rgb(208,220,230);
+}
+.protxt{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+.protxt-sm{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.redlabel{
+    background-color: rgb(255, 114, 114);
+    border-radius: 2rem;
+    padding:0 6px;
+}
+
+.greenlabel{
+    background-color: rgb(18, 219, 0);
+    border-radius: 2rem;
+    padding:0 6px;
+}
+
+.dlt-btn{
+    border-radius: 1.5rem;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px;
+    border-style: none;
+    color: white;
+    background-color: rgb(255, 82, 82);
+}
+
+.dlt-btn:hover {
+    background-color: white;
+    color: rgb(255, 82, 82);
+
 }

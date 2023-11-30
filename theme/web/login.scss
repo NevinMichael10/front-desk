@@ -76,6 +76,16 @@ color: gray;
 }
 }
 
+.inputbox{
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+      opacity: 1;
+      border-style: none;
+      background-color: rgba(217, 217, 217, 0.91);
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+}
+}
+
 .inputbox2{
 .form-control{
   border-radius: 20px;
