@@ -304,12 +304,13 @@ overflow-x: hidden;
         height: 100%;
         padding: 5px;
         filter: invert(100%);
+        transition: all ease-in-out 300ms;
     }
 } 
 
 .bill-rt-cont{
     height:140px;
-    width:400px;
+    width:auto;
 }
 
 
@@ -327,6 +328,7 @@ overflow-x: hidden;
 
 .listv-cont:hover .bill-img img {
     filter: none;
+    
 }
 
 .listv-cont:hover .product-img {
@@ -372,5 +374,25 @@ overflow-x: hidden;
 .dlt-btn:hover {
     background-color: white;
     color: rgb(255, 82, 82);
+
+}
+
+
+.bill-btn{
+    border-radius: 1.5rem;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px;
+    border-style: none;
+    color: black;
+    background-color:rgb(255,255,255);
+    transition: all ease-in-out 300ms;
+}
+
+.bill-btn:hover {
+    background-color: black;
+    color: white;
 
 }
