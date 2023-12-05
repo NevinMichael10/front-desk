@@ -1,0 +1,8 @@
+dependency commons-io:commons-io:2.11.0
+dependency org.apache.commons:commons-lang3:3.12.0
+delete commons-io-2.11.0.jar
+delete commons-io-2.11.0.jar.DocumentGeneration.1.2.1
+delete commons-io-2.11.0.jar.DocumentGeneration.RequiredLib
+delete commons-lang3-3.12.0.jar
+delete commons-lang3-3.12.0.jar.DocumentGeneration.1.2.1
+delete commons-lang3-3.12.0.jar.DocumentGeneration.RequiredLib
