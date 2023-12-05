@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("resources/fonts/open-sans/open-sans.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @font-face {
   font-family: "Atlas_Core$Atlas_Filled";
   src: url("./fonts/Atlas_Core$Atlas_Filled.ttf") format("truetype");
@@ -27024,6 +27025,465 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-style: none;
 }
 
+/**
+    Classes for React Date-Picker font-unit and color adjustments
+*/
+.react-datepicker {
+  font-size: 1em;
+  border: 1px solid #ced0d3;
+}
+
+.react-datepicker-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.react-datepicker__input-container {
+  display: flex;
+  flex: 1;
+}
+
+.react-datepicker__header {
+  padding-top: 0.8em;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.react-datepicker__header__dropdown {
+  margin: 8px 0 4px 0;
+}
+
+.react-datepicker__year-dropdown-container {
+  margin-left: 8px;
+}
+
+.react-datepicker__month {
+  margin: 4px 4px 8px 4px;
+}
+
+.react-datepicker__month-container {
+  font-weight: normal;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 2em;
+  line-height: 2em;
+  margin: 4px;
+}
+
+.react-datepicker__day,
+.react-datepicker__day--in-range {
+  color: #555;
+  border-radius: 50%;
+}
+.react-datepicker__day:hover,
+.react-datepicker__day--in-range:hover {
+  border-radius: 50%;
+  color: #264ae5;
+  background-color: #f8f8f8;
+}
+
+.react-datepicker__day-name {
+  color: #264ae5;
+  font-weight: bold;
+}
+
+.react-datepicker__day--outside-month {
+  color: #c8c8c8;
+}
+
+.react-datepicker__day--today:not(.react-datepicker__day--in-range),
+.react-datepicker__day--keyboard-selected {
+  color: #264ae5;
+  background-color: #f8f8f8;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--range-start,
+.react-datepicker__day--range-end,
+.react-datepicker__day--in-selecting-range.react-datepicker__day--selecting-range-start {
+  background-color: #264ae5;
+  color: #fff;
+}
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--range-start:hover,
+.react-datepicker__day--range-end:hover,
+.react-datepicker__day--in-selecting-range.react-datepicker__day--selecting-range-start:hover {
+  border-radius: 50%;
+  background-color: #264ae5;
+  color: #fff;
+}
+
+.react-datepicker__day--in-range:not(.react-datepicker__day--range-start, .react-datepicker__day--range-end),
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range, .react-datepicker__day--selecting-range-start) {
+  background-color: #eaeaea;
+  color: #000;
+}
+.react-datepicker__day--in-range:not(.react-datepicker__day--range-start, .react-datepicker__day--range-end):hover,
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range, .react-datepicker__day--selecting-range-start):hover {
+  background-color: #264ae5;
+  color: #fff;
+}
+
+button.react-datepicker__close-icon::after {
+  background-color: #264ae5;
+}
+
+.react-datepicker__current-month {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.react-datepicker__navigation {
+  top: 1em;
+  line-height: 1.7em;
+  border: 0.45em solid transparent;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+  left: 8px;
+  border: none;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: #ccc;
+  right: 8px;
+  border: none;
+}
+
+/**
+Space between the fields and the popup
+ */
+.react-datepicker-popper[data-placement^=bottom] {
+  margin-top: unset;
+  padding-top: 8px;
+}
+
+@font-face {
+  font-family: "datagrid-filters";
+  src: url("./fonts/datagrid-filters.eot");
+  src: url("./fonts/datagrid-filters.eot") format("embedded-opentype"), url("./fonts/datagrid-filters.woff2") format("woff2"), url("./fonts/datagrid-filters.woff") format("woff"), url("./fonts/datagrid-filters.ttf") format("truetype"), url("./fonts/datagrid-filters.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.filter-container .filter-input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.filter-container .btn-calendar {
+  margin-left: 5px;
+}
+.filter-container .btn-calendar .button-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.filter-selector {
+  padding-left: 0;
+  padding-right: 0;
+}
+.filter-selector .filter-selector-content {
+  height: 100%;
+  align-self: flex-end;
+}
+.filter-selector .filter-selector-content .filter-selector-button {
+  padding: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  height: 100%;
+}
+.filter-selector .filter-selector-content .filter-selector-button:before {
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding-left: 4px;
+  /* The font has spaces in the right side, so to align in the middle we need this */
+}
+.filter-selector .filter-selector-content .filter-selectors {
+  position: absolute;
+  width: max-content;
+  left: 0;
+  margin: 0 8px;
+  padding: 0;
+  background: #fff;
+  z-index: 102;
+  border-radius: 8px;
+  list-style-type: none;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow: hidden;
+  z-index: 102;
+}
+.filter-selector .filter-selector-content .filter-selectors li {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  line-height: 32px;
+  cursor: pointer;
+}
+.filter-selector .filter-selector-content .filter-selectors li .filter-label {
+  padding-right: 8px;
+}
+.filter-selector .filter-selector-content .filter-selectors li.filter-selected {
+  background-color: #f8f8f8;
+  color: #264ae5;
+}
+.filter-selector .filter-selector-content .filter-selectors li:hover, .filter-selector .filter-selector-content .filter-selectors li:focus {
+  background-color: #f8f8f8;
+}
+
+.filter-selectors {
+  padding: 0;
+  background: #fff;
+  border-radius: 8px;
+  list-style-type: none;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow: hidden;
+  z-index: 102;
+}
+.filter-selectors li {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  line-height: 32px;
+  cursor: pointer;
+}
+.filter-selectors li .filter-label {
+  padding-right: 8px;
+}
+.filter-selectors li.filter-selected {
+  background-color: #f8f8f8;
+  color: #264ae5;
+}
+.filter-selectors li:hover, .filter-selectors li:focus {
+  background-color: #f8f8f8;
+}
+
+.dropdown-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.dropdown-list li {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  min-height: 32px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.dropdown-list li .filter-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dropdown-list li.filter-selected {
+  background-color: #f8f8f8;
+  color: #264ae5;
+}
+.dropdown-list li:hover, .dropdown-list li:focus {
+  background-color: #f8f8f8;
+}
+.dropdown-list li label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 8px;
+  font-weight: normal;
+  width: calc(100% - 32px);
+}
+
+:not(.dropdown-content) > .dropdown-list {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow-x: hidden;
+  max-height: 40vh;
+  z-index: 102;
+}
+
+.dropdown-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow-x: hidden;
+  max-height: 40vh;
+  z-index: 102;
+}
+.dropdown-content-section + .dropdown-content-section {
+  border-top: 1px solid #e7e7e9;
+}
+
+.dropdown-footer {
+  position: sticky;
+  bottom: 0;
+  background: inherit;
+}
+
+.dropdown-footer-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 8px;
+  min-height: 40px;
+}
+
+.dropdown-loading {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.dropdown-container {
+  flex: 1;
+}
+.dropdown-container .dropdown-triggerer {
+  caret-color: transparent;
+  cursor: pointer;
+  background-image: url("resources/dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: right;
+  background-position-y: center;
+  background-origin: content-box;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.dropdown-container .dropdown-list {
+  position: absolute;
+  width: max-content;
+  left: 0;
+  margin: 0 8px;
+  padding: 0;
+  background: #fff;
+  z-index: 102;
+  border-radius: 8px;
+  list-style-type: none;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow-x: hidden;
+  max-height: 40vh;
+}
+.dropdown-container .dropdown-list li {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  min-height: 32px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.dropdown-container .dropdown-list li .filter-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dropdown-container .dropdown-list li.filter-selected {
+  background-color: #f8f8f8;
+  color: #264ae5;
+}
+.dropdown-container .dropdown-list li:hover, .dropdown-container .dropdown-list li:focus {
+  background-color: #f8f8f8;
+}
+.dropdown-container .dropdown-list li label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 8px;
+  font-weight: normal;
+  width: calc(100% - 32px);
+}
+
+.date-filter-container {
+  z-index: 102;
+}
+
+/**
+Icons
+ */
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  margin: 6px 8px;
+  font-family: "datagrid-filters";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "datagrid-filters";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contains:before {
+  content: "\e808";
+}
+
+.endsWith:before {
+  content: "\e806";
+}
+
+.equal:before {
+  content: "\e809";
+}
+
+.greater:before {
+  content: "\e80a";
+}
+
+.greaterEqual:before {
+  content: "\e80b";
+}
+
+.notEqual:before {
+  content: "\e80c";
+}
+
+.smaller:before {
+  content: "\e80d";
+}
+
+.smallerEqual:before {
+  content: "\e80e";
+}
+
+.startsWith:before {
+  content: "\e807";
+}
+
+.between:before {
+  content: "\e900";
+}
+
+.empty:before {
+  content: "\e901";
+}
+
+.notEmpty:before {
+  content: "\e903";
+}
+
+/**
+* Specific styles for filters inside Data Grid 2
+**/
+div:not(.table-compact) > .table .th .filter-selector .filter-selectors {
+  margin: 0 16px;
+}
+div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
+  margin: 0 16px;
+}
+
 .glass {
   z-index: 1;
   height: 95vh;
@@ -27392,13 +27852,119 @@ body .mx-fileinput .mx-compound-control .btn {
   padding: 8px;
   border-style: none;
   color: black;
-  background-color: rgb(255, 255, 255);
-  transition: all ease-in-out 300ms;
+  background-size: 210% 100%;
+  background-position: right;
+  transition: background-position 350ms ease-in-out;
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 50%, transparent 50%);
 }
 
 .bill-btn:hover {
-  background-color: black;
+  background-position: left;
   color: white;
+}
+
+.print-cont {
+  padding: 3px;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.print-cont::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: black;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.print-cont span {
+  position: relative;
+}
+.print-cont img {
+  margin: 5px;
+}
+.print-cont:hover {
+  color: white;
+}
+.print-cont:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.print-cont:hover img {
+  filter: invert(100) blur(0);
+  z-index: 66;
+}
+
+.black-b {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.blue-b {
+  font-family: "Poppins", sans-serif;
+  color: #399bd2;
+}
+
+.dgreen-b {
+  font-family: "Poppins", sans-serif;
+  color: #266e27;
+}
+
+.grey-b {
+  font-family: "Poppins", sans-serif;
+  color: #b1b6c0;
+}
+
+.grey-d-b {
+  font-family: "Poppins", sans-serif;
+  color: #8a8a8b;
+}
+
+.bold-b {
+  font-weight: 600;
+}
+
+.bold-b2 {
+  font-weight: 500;
+}
+
+.f-b-s {
+  font-size: 14px;
+}
+
+.f-b-m {
+  font-size: 18px;
+}
+
+.f-b-l {
+  font-size: 24px;
+}
+
+.outer-b {
+  border-radius: 2rem;
+  min-height: 95.8vh;
+  width: 600px;
+  background-color: white;
+}
+
+.outer-b-p {
+  width: 100vw;
+  background-color: #e6e8ec;
+  padding: 15px 0;
+  height: 100vh;
+}
+
+.grnwarn {
+  background-color: rgba(114, 243, 105, 0.197);
+  border-radius: 10px;
+  border: 0.5px solid rgba(90, 251, 78, 0.341);
+  padding: 10px;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */
