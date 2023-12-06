@@ -442,3 +442,84 @@ overflow-x: hidden;
   
 }
 
+
+//Custom date picker
+
+.cust-date{
+    .mx-validation-message {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding: 2px 6px;
+    color: #d70000;
+    border-color: #ff828e;
+    background-color: #f9d9dc;
+    border-radius: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    }
+
+    .mx-compound-control .btn {
+        margin-left: 0px;
+    }
+    .form-control {
+        display: flex;
+        flex: 1;
+        min-width: 50px;
+        height: auto;
+        padding: 8px 8px;
+        color: #0a1325;
+        border-style: none;
+        border-radius: 2rem;
+        box-shadow: none;
+        font-size: 14px;
+        line-height: 1.428571429;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    .mx-compound-control {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        border-style: none;
+        background-color: white;
+        border-radius: 2rem;
+        width:250px;
+    }
+    .mx-compound-control .btn {
+        margin-left: 0px;
+        border-style: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .form-control:not([readonly]):focus {
+        border-style: none;
+        outline: 0;
+        box-shadow: none;
+    }
+    .form-group .mx-validation-message {
+    flex-basis: 30%;
+        .has-error .mx-validation-message {
+            margin-top: 8px;
+            margin-bottom: 0;
+            padding: 4px;
+            color: #88262f;
+            font-size: 12px;
+            border-color: #9f2c37;
+            background-color: aliceblue;
+        }
+    }
+
+    .has-error .mx-validation-message {
+        margin-top: 8px;
+        margin-bottom: 0;
+        padding: 4px;
+        color: #88262f;
+        font-size: 12px;
+        border-color: #9f2c37;
+        background-color: aliceblue;
+    }
+    background-color: transparent;
+}
+

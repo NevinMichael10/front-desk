@@ -27012,6 +27012,18 @@ input[type=checkbox].three-state-checkbox + .control-label {
   width: 250px;
 }
 
+.inputbox .mx-validation-message {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 2px 6px;
+  color: #d70000;
+  border-color: #ff828e;
+  background-color: #f9d9dc;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
 .inputbox .form-control[disabled], .inputbox .form-control[readonly], .inputbox fieldset[disabled] .form-control {
   opacity: 1;
   border-style: none;
@@ -27023,6 +27035,25 @@ input[type=checkbox].three-state-checkbox + .control-label {
 .inputbox2 .form-control {
   border-radius: 20px;
   border-style: none;
+}
+.inputbox2 .mx-validation-message {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 2px 6px;
+  color: #d70000;
+  border-color: #ff828e;
+  background-color: #f9d9dc;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.inputbox2 .form-control[disabled], .inputbox2 .form-control[readonly], .inputbox2 fieldset[disabled] .form-control {
+  opacity: 1;
+  border-style: none;
+  background-color: rgba(217, 217, 217, 0.91);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 /**
@@ -27899,6 +27930,82 @@ body .mx-fileinput .mx-compound-control .btn {
 .print-cont:hover img {
   filter: invert(100) blur(0);
   z-index: 66;
+}
+
+.cust-date {
+  background-color: transparent;
+}
+.cust-date .mx-validation-message {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 2px 6px;
+  color: #d70000;
+  border-color: #ff828e;
+  background-color: #f9d9dc;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.cust-date .mx-compound-control .btn {
+  margin-left: 0px;
+}
+.cust-date .form-control {
+  display: flex;
+  flex: 1;
+  min-width: 50px;
+  height: auto;
+  padding: 8px 8px;
+  color: #0a1325;
+  border-style: none;
+  border-radius: 2rem;
+  box-shadow: none;
+  font-size: 14px;
+  line-height: 1.428571429;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.cust-date .mx-compound-control {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  border-style: none;
+  background-color: white;
+  border-radius: 2rem;
+  width: 250px;
+}
+.cust-date .mx-compound-control .btn {
+  margin-left: 0px;
+  border-style: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+.cust-date .form-control:not([readonly]):focus {
+  border-style: none;
+  outline: 0;
+  box-shadow: none;
+}
+.cust-date .form-group .mx-validation-message {
+  flex-basis: 30%;
+}
+.cust-date .form-group .mx-validation-message .has-error .mx-validation-message {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 4px;
+  color: #88262f;
+  font-size: 12px;
+  border-color: #9f2c37;
+  background-color: aliceblue;
+}
+.cust-date .has-error .mx-validation-message {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 4px;
+  color: #88262f;
+  font-size: 12px;
+  border-color: #9f2c37;
+  background-color: aliceblue;
 }
 
 .black-b {

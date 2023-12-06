@@ -59,9 +59,9 @@
 }
 
 .weltxt{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .weltxtbtm{
@@ -77,19 +77,53 @@ color: gray;
 }
 
 .inputbox{
+  .mx-validation-message {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding: 2px 6px;
+    color: #d70000;
+    border-color: #ff828e;
+    background-color: #f9d9dc;
+    border-radius: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-      opacity: 1;
-      border-style: none;
-      background-color: rgba(217, 217, 217, 0.91);
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-}
+    opacity: 1;
+    border-style: none;
+    background-color: rgba(217, 217, 217, 0.91);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 .inputbox2{
-.form-control{
-  border-radius: 20px;
-  border-style: none;
-  // width:600px;
-}
+  .form-control{
+    border-radius: 20px;
+    border-style: none;
+    // width:600px;
+  }
+
+  .mx-validation-message {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding: 2px 6px;
+    color: #d70000;
+    border-color: #ff828e;
+    background-color: #f9d9dc;
+    border-radius: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    opacity: 1;
+    border-style: none;
+    background-color: rgba(217, 217, 217, 0.91);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
