@@ -70,8 +70,9 @@
     }
 }
 
-.profile-pic-l:hover{
-   border: 3px solid black;
+.profile-pic-l:hover img{
+    min-height: 102%;
+    min-width: 102%;     
 }
 
 .navtxt{
@@ -621,4 +622,13 @@ overflow-x: hidden;
     border-radius: 1.5rem;
     box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0) ;
     padding: 2px 8px;
+}
+
+.top-icon{
+    img{
+        filter: invert(100);
+    }
+}
+
+.top-icon-blank{
 }

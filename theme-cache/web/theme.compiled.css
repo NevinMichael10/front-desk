@@ -27572,8 +27572,9 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
   box-shadow: 0 0 8px 3px rgba(108, 106, 106, 0.656);
   transition: border ease-in-out 300ms;
 }
-.profile-pic-l:hover {
-  border: 3px solid black;
+.profile-pic-l:hover img {
+  min-height: 102%;
+  min-width: 102%;
 }
 
 .navtxt {
@@ -28099,6 +28100,10 @@ body .mx-fileinput .mx-compound-control .btn {
   border-radius: 1.5rem;
   box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0);
   padding: 2px 8px;
+}
+
+.top-icon img {
+  filter: invert(100);
 }
 
 .black-b {
