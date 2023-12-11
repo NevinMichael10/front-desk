@@ -622,6 +622,13 @@ overflow-x: hidden;
     border-radius: 1.5rem;
     box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0) ;
     padding: 2px 8px;
+    transition:box-shadow ease-in-out 200ms  ;
+}
+
+.blank:hover{
+    border-radius: 1.5rem;
+    box-shadow: 0 0 3px 2px rgba(143, 143, 143, 0.868) ;
+    padding: 2px 8px;
 }
 
 .top-icon{
@@ -631,4 +638,89 @@ overflow-x: hidden;
 }
 
 .top-icon-blank{
+    img{
+            transition: all ease-in-out 200ms;
+        }
 }
+
+
+.top-icon-blank:hover{
+    img{
+            filter: invert(100);
+        }
+}
+
+
+//custom datagrid
+.cust-datagrid{
+    .table {
+        position: relative;
+        border-width: 0;
+        background-color: rgba(255, 255, 255, 0.533);
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        box-shadow: 0 0 5px 2px rgba(143, 139, 139, 0.793);
+        
+    }
+
+    .table .th {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 600;
+    background-color: rgb(153,197,241);
+    border-width: 0;
+    border-color: #ced0d3;
+    padding: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-width: 0;
+}
+}
+
+//custom tab container
+
+.cust-tab-container{
+    
+        .mx-tabcontainer-tabs {
+            margin-bottom: $spacing-medium;
+            border-color: none;
+            display: flex;
+            border-style: none;
+            > li {
+                float: none;
+                border-style: none;
+            }
+
+            & > li > a {
+                margin-right: 0;
+                transition: all 0.2s ease-in-out;
+                color: $tabs-color;
+                font-weight: $font-weight-normal;
+                border-radius: $border-radius-default $border-radius-default 0 0;
+                border-bottom-color: transparent;
+                background-color: transparent;
+                outline: none;
+
+                &:hover,
+                &:focus {
+                    background-color: rgb(153,197,239);
+                }
+            }
+            & > li.active{
+                border-style: none;
+            }
+            & > li.active > a,
+            & > li.active > a:hover,
+            & > li.active > a:focus {
+                color:black;
+                border-bottom-color: black;
+                background-color: rgb(153,197,239);
+                outline: none;
+            }
+        }
+    }
+    
+
+

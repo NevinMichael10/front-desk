@@ -28100,10 +28100,81 @@ body .mx-fileinput .mx-compound-control .btn {
   border-radius: 1.5rem;
   box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0);
   padding: 2px 8px;
+  transition: box-shadow ease-in-out 200ms;
+}
+
+.blank:hover {
+  border-radius: 1.5rem;
+  box-shadow: 0 0 3px 2px rgba(143, 143, 143, 0.868);
+  padding: 2px 8px;
 }
 
 .top-icon img {
   filter: invert(100);
+}
+
+.top-icon-blank img {
+  transition: all ease-in-out 200ms;
+}
+
+.top-icon-blank:hover img {
+  filter: invert(100);
+}
+
+.cust-datagrid .table {
+  position: relative;
+  border-width: 0;
+  background-color: rgba(255, 255, 255, 0.533);
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(143, 139, 139, 0.793);
+}
+.cust-datagrid .table .th {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 600;
+  background-color: rgb(153, 197, 241);
+  border-width: 0;
+  border-color: #ced0d3;
+  padding: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-width: 0;
+}
+
+.cust-tab-container .mx-tabcontainer-tabs {
+  margin-bottom: 16px;
+  border-color: none;
+  display: flex;
+  border-style: none;
+}
+.cust-tab-container .mx-tabcontainer-tabs > li {
+  float: none;
+  border-style: none;
+}
+.cust-tab-container .mx-tabcontainer-tabs > li > a {
+  margin-right: 0;
+  transition: all 0.2s ease-in-out;
+  color: #6c717e;
+  font-weight: normal;
+  border-radius: 4px 4px 0 0;
+  border-bottom-color: transparent;
+  background-color: transparent;
+  outline: none;
+}
+.cust-tab-container .mx-tabcontainer-tabs > li > a:hover, .cust-tab-container .mx-tabcontainer-tabs > li > a:focus {
+  background-color: rgb(153, 197, 239);
+}
+.cust-tab-container .mx-tabcontainer-tabs > li.active {
+  border-style: none;
+}
+.cust-tab-container .mx-tabcontainer-tabs > li.active > a, .cust-tab-container .mx-tabcontainer-tabs > li.active > a:hover, .cust-tab-container .mx-tabcontainer-tabs > li.active > a:focus {
+  color: black;
+  border-bottom-color: black;
+  background-color: rgb(153, 197, 239);
+  outline: none;
 }
 
 .black-b {
