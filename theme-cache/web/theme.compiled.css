@@ -27745,6 +27745,23 @@ body .mx-fileinput .mx-compound-control .btn {
   color: white;
 }
 
+.cust-btn-r {
+  border-radius: 2rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px;
+  border-style: none;
+  color: white;
+  background-color: #ee2020;
+}
+
+.cust-btn-r:hover {
+  background-color: white;
+  color: #ee2020;
+}
+
 .cust-btn-g {
   border-radius: 2rem;
   padding: 0;
@@ -27777,6 +27794,23 @@ body .mx-fileinput .mx-compound-control .btn {
 .cust-btn-y:hover {
   background-color: white;
   color: #ebaa08;
+}
+
+.cust-btn-refresh {
+  border-radius: 2rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px;
+  border-style: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.533);
+}
+
+.cust-btn-refresh:hover {
+  background-color: #9ac6f0;
+  color: black;
 }
 
 .product-img {
@@ -27898,6 +27932,26 @@ body .mx-fileinput .mx-compound-control .btn {
 .bill-btn:hover {
   background-position: left;
   color: white;
+}
+
+.delete-btn {
+  border-radius: 1.5rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px;
+  border-style: none;
+  color: white;
+  background-size: 210% 100%;
+  background-position: right;
+  transition: background-position 350ms ease-in-out, color 350ms ease-in-out;
+  background-image: linear-gradient(to left, red 50%, white 50%);
+}
+
+.delete-btn:hover {
+  background-position: left;
+  color: red;
 }
 
 .print-cont {
@@ -28024,6 +28078,10 @@ body .mx-fileinput .mx-compound-control .btn {
 
 .profile-txt-l {
   font-size: 24px;
+}
+
+.profile-txt-xm {
+  font-size: 18px;
 }
 
 .profile-txt-m {
@@ -28175,6 +28233,72 @@ body .mx-fileinput .mx-compound-control .btn {
   border-bottom-color: black;
   background-color: rgb(153, 197, 239);
   outline: none;
+}
+
+.cust-list-view .btn.mx-listview-loadMore {
+  width: 98%;
+  box-shadow: 0 0 8px 3px rgba(143, 143, 143, 0.4117647059);
+  margin: 10px 0px 10px 10px;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  color: black;
+  border-style: none;
+}
+.cust-list-view .btn.mx-listview-loadMore:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.warning-glass {
+  height: 65vh;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 3rem;
+  box-shadow: 0 0 15px 3px rgba(143, 143, 143, 0.4117647059);
+}
+
+.cust-popup {
+  overflow: hidden;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.266);
+  box-shadow: 0 0 10px 3px rgba(13, 13, 13, 0.2745098039);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  position: fixed;
+  width: 300px;
+  top: 250px !important;
+  left: 450px !important;
+}
+.cust-popup .modal-content {
+  background-color: transparent;
+  border-style: none;
+  box-shadow: none;
+}
+.cust-popup .modal-content .modal-header {
+  padding: 15px 20px;
+  /* border-bottom-color: #ced0d3; */
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  display: none;
+}
+.cust-popup .modal-content .mx-resizer {
+  outline: none;
+  display: none;
+}
+.cust-popup .modal-content .mx-window-body {
+  overflow: hidden;
+}
+
+.mx-underlay {
+  opacity: 0.3;
+}
+
+.social-media-img:hover {
+  filter: invert(100) !important;
+  -webkit-filter: invert(100) !important;
 }
 
 .black-b {
