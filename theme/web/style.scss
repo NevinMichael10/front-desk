@@ -323,6 +323,18 @@ overflow-x: hidden;
     color:black;
 
 }
+.productv-img{
+    max-width:200px;
+    transition: all ease-in-out 300ms;
+    overflow: hidden;
+    img{
+        object-fit: contain;
+        padding: 5px;
+        min-height: 100%;
+    }
+
+}
+
 .product-img{
     background-color: rgb(207, 207, 207);
     height:300px;
@@ -346,9 +358,13 @@ overflow-x: hidden;
     margin: auto;
 }
 
+.productv-rt-cont{
+    max-height:140px;
+    width:auto;
+}
 .bill-img{
-    height:140px;
-    width:300px;
+    // max-height:140px;
+    max-width:140px;
     border-radius:1rem;
     transition: all ease-in-out 300ms;
     img{
@@ -376,7 +392,8 @@ overflow-x: hidden;
 }
 
 .listv-cont:hover {
-    background-color: rgb(207, 207, 207);
+    // background-color: rgb(207, 207, 207);
+    background-color:rgba(255, 255, 255, 0.362); 
 }
 
 .listv-cont:hover .bill-img img {
