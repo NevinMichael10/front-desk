@@ -27680,8 +27680,8 @@ body .mx-fileinput .mx-compound-control .btn {
 }
 
 .setting-card {
-  height: 250px;
-  width: 400px;
+  height: 200px;
+  width: 300px;
   box-shadow: 0 0 8px 3px rgba(143, 143, 143, 0.4117647059);
   border-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.362);
@@ -27831,6 +27831,12 @@ body .mx-fileinput .mx-compound-control .btn {
   width: 400px;
 }
 
+.product-rt-cont2 {
+  height: 300px;
+  width: auto;
+  margin: auto;
+}
+
 .bill-img {
   height: 140px;
   width: 300px;
@@ -27895,6 +27901,7 @@ body .mx-fileinput .mx-compound-control .btn {
   background-color: rgb(18, 219, 0);
   border-radius: 2rem;
   padding: 0 6px;
+  color: rgb(255, 255, 255);
 }
 
 .dlt-btn {
@@ -28299,6 +28306,13 @@ body .mx-fileinput .mx-compound-control .btn {
 .social-media-img:hover {
   filter: invert(100) !important;
   -webkit-filter: invert(100) !important;
+}
+
+.hello {
+  background: url("https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.gif") center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
 }
 
 .black-b {
