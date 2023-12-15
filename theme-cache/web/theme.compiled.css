@@ -26968,6 +26968,7 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-radius: 3rem;
   border: 1px solid rgba(238, 238, 238, 0.937);
   box-shadow: 0 0 15px 3px rgba(251, 251, 251, 0.4117647059);
+  padding: 15px;
 }
 
 .loginbox {
@@ -27572,6 +27573,11 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
   box-shadow: 0 0 8px 3px rgba(108, 106, 106, 0.656);
   transition: border ease-in-out 300ms;
 }
+.profile-pic-l img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
 .profile-pic-l:hover img {
   min-height: 102%;
   min-width: 102%;
@@ -27910,6 +27916,14 @@ body .mx-fileinput .mx-compound-control .btn {
   background-color: rgb(255, 114, 114);
   border-radius: 2rem;
   padding: 0 6px;
+}
+
+.notgenerated {
+  content: "Not Generated";
+  background-color: rgb(255, 114, 114);
+  border-radius: 2rem;
+  padding: 0 6px;
+  color: black;
 }
 
 .greenlabel {
@@ -28328,6 +28342,36 @@ body .mx-fileinput .mx-compound-control .btn {
   background-size: contain;
   width: 32px;
   height: 32px;
+}
+
+.custom-tooltip .widget-tooltip-content {
+  background-color: rgb(49, 43, 43);
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: #f8f8f8;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 6px;
+  text-align: center;
+  white-space: break-spaces;
+  word-break: break-word;
+  z-index: 1;
+}
+
+.custom-tooltip-w .widget-tooltip-content {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: #001575;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 1px 5px;
+  text-align: center;
+  white-space: break-spaces;
+  word-break: break-word;
+  z-index: 1;
 }
 
 .black-b {

@@ -65,8 +65,8 @@
     box-shadow: 0 0 8px 3px rgba(108, 106, 106, 0.656);
     transition: border ease-in-out 300ms;
     img{
-        // min-height: 100%;
-        // min-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
     }
 }
 
@@ -421,6 +421,14 @@ overflow-x: hidden;
     background-color: rgb(255, 114, 114);
     border-radius: 2rem;
     padding:0 6px;
+}
+
+.notgenerated{
+    content: 'Not Generated';
+    background-color: rgb(255, 114, 114);
+    border-radius: 2rem;
+    padding:0 6px;
+    color:black;
 }
 
 .greenlabel{
@@ -939,5 +947,43 @@ overflow-x: hidden;
   width: 32px;
   height: 32px;
 
+}
+
+//tooltip
+
+.custom-tooltip{
+
+    .widget-tooltip-content {
+        background-color: rgb(49, 43, 43);
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
+        color: #f8f8f8;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 0 6px;
+        text-align: center;
+        white-space: break-spaces;
+        word-break: break-word;
+        z-index: 1;
+    }
+}
+
+.custom-tooltip-w{
+
+    .widget-tooltip-content {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
+        color: #001575;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 1px 5px;
+        text-align: center;
+        white-space: break-spaces;
+        word-break: break-word;
+        z-index: 1;
+    }
 }
 
