@@ -27646,6 +27646,7 @@ body .mx-fileinput .mx-compound-control {
   gap: 2px;
   background-color: white;
   border-radius: 30px;
+  min-height: 35px;
 }
 
 body .mx-fileinput .mx-compound-control .btn.mx-fileinput-upload-button {
@@ -27766,6 +27767,65 @@ body .mx-fileinput .mx-compound-control .btn {
 .cust-btn-r:hover {
   background-color: white;
   color: #ee2020;
+}
+
+.cust-btn-b {
+  border-radius: 2rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px;
+  border-style: none;
+  color: white;
+  background-color: #264ae5;
+}
+
+.cust-btn-b:hover {
+  background-color: white;
+  color: #264ae5;
+}
+
+.cust-btn-g2 {
+  border-radius: 2rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px;
+  border-style: none;
+  color: white;
+  background-color: #68a618;
+}
+
+.cust-btn-g2:hover {
+  background-color: white;
+  color: #68a618;
+}
+
+.cust-p4 {
+  padding: 4px 8px;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.cust-label-wt {
+  border-radius: 2rem;
+  padding: 0 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-style: none;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  background-color: rgba(226, 226, 226, 0.6901960784);
+}
+
+.cust-label-wt:hover {
+  background-color: rgba(199, 199, 199, 0.5882352941);
+  color: #000000;
 }
 
 .cust-btn-g {
