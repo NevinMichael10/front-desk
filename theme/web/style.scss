@@ -247,6 +247,14 @@ overflow-x: hidden;
     min-width: 15px;
     background-color: rgb(255, 163, 179);
 }
+.alert-number-none{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 12px;
+    border-radius: 2rem;
+    min-width: 15px;
+    background-color: transparent;
+}
 
 .alert-txt-number{
     font-size: x-small;
@@ -315,9 +323,9 @@ overflow-x: hidden;
 
 .cust-label-wt{
     border-radius: 2rem;
-    padding: 0 8px;
+    padding: 3.5px 8px !important;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     border-style: none;
     color: rgb(0, 0, 0);
@@ -326,8 +334,26 @@ overflow-x: hidden;
 }
 
 .cust-label-wt:hover{
-    background-color: #c7c7c796;
-    color:#000000;
+    background-color: #84848496;
+    color:white;
+
+}
+
+.cust-label-gr{
+    border-radius: 2rem;
+    padding: 3.5px 8px !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-style: none;
+    color: #68a618;
+    width: fit-content;
+    background-color: white;
+}
+
+.cust-label-gr:hover{
+    background-color: #68a618;
+    color:white;
 
 }
 
@@ -1049,3 +1075,9 @@ overflow-x: hidden;
     }
 }
 
+// .mx-progress-indicator {
+//     width: 100px;
+//     height: auto;
+//     margin: auto;
+//     background-image: url("./image/grdbg.jpg") !important;
+// }

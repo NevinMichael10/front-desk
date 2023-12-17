@@ -27036,6 +27036,7 @@ input[type=checkbox].three-state-checkbox + .control-label {
 .inputbox2 .form-control {
   border-radius: 20px;
   border-style: none;
+  min-width: 250px;
 }
 .inputbox2 .mx-validation-message {
   margin-top: 8px;
@@ -27747,6 +27748,15 @@ body .mx-fileinput .mx-compound-control .btn {
   background-color: rgb(255, 163, 179);
 }
 
+.alert-number-none {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 12px;
+  border-radius: 2rem;
+  min-width: 15px;
+  background-color: transparent;
+}
+
 .alert-txt-number {
   font-size: x-small;
   color: white;
@@ -27813,9 +27823,9 @@ body .mx-fileinput .mx-compound-control .btn {
 
 .cust-label-wt {
   border-radius: 2rem;
-  padding: 0 8px;
+  padding: 3.5px 8px !important;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   border-style: none;
   color: rgb(0, 0, 0);
@@ -27824,8 +27834,25 @@ body .mx-fileinput .mx-compound-control .btn {
 }
 
 .cust-label-wt:hover {
-  background-color: rgba(199, 199, 199, 0.5882352941);
-  color: #000000;
+  background-color: rgba(132, 132, 132, 0.5882352941);
+  color: white;
+}
+
+.cust-label-gr {
+  border-radius: 2rem;
+  padding: 3.5px 8px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border-style: none;
+  color: #68a618;
+  width: fit-content;
+  background-color: white;
+}
+
+.cust-label-gr:hover {
+  background-color: #68a618;
+  color: white;
 }
 
 .cust-btn-g {
