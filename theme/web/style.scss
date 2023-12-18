@@ -992,10 +992,10 @@ overflow-x: hidden;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 1.5rem;
-    position: fixed;
+    // position: fixed;
     width:300px;
-    top: 250px !important;
-    left:450px !important;
+    // top: 250px !important;
+    // left:450px !important;
     .modal-content {
         background-color: transparent;
         border-style:none;
@@ -1012,7 +1012,7 @@ overflow-x: hidden;
 
         .mx-resizer{
         outline: none;
-        display: none;   
+        // display: none;   
     }
     .mx-window-body{
         overflow: hidden;
