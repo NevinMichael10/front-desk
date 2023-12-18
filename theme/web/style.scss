@@ -207,23 +207,26 @@ body .mx-fileinput .mx-compound-control .btn {
 //Custom scrollbar
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #f5f5f5;
+//   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+//   border-radius: 10px;
+  background-color: #d6d6d6;
 }
 
+/* Default scrollbar styles for both vertical and horizontal */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
+  height: 6px;
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 6px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: rgb(137,109,209);
+  background-color: rgba(63, 77, 103, 0.834);
 }
+
 
 .custom-scrollcont{
 .mx-scrollcontainer-wrapper {
@@ -1081,3 +1084,108 @@ overflow-x: hidden;
 //     margin: auto;
 //     background-image: url("./image/grdbg.jpg") !important;
 // }
+
+
+.weather-card {
+  padding: 4px 15px;
+  box-shadow: 0 0 8px 3px #8f8f8f69 ;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.362);  
+  transition: ease-in-out 300ms;
+  width: max-content;
+}
+
+.list-view-horizontal{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+           ul {
+               display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    overflow: auto;
+    ::-webkit-scrollbar-thumb{
+        display: none;
+    }
+    }
+    ul::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+            ul li{  
+                    margin: 8px;
+            }
+            li {
+                float: left;
+            }
+
+            li a {
+                display: inline-block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                
+
+    }
+    .btn.mx-listview-loadMore {
+        width: auto;
+        box-shadow: 0 0 8px 3px rgba(143, 143, 143, 0.4117647059);
+        margin: 10px 0px 10px 10px;
+        border-radius: 1.5rem;
+        background-color: transparent;
+        color: black;
+        border-style: none;
+    }
+    .btn.mx-listview-loadMore:hover {
+        background-color: rgb(207, 207, 207);
+
+    }
+
+
+}
+
+.list-view-m0{
+overflow: auto;
+    ul {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow: auto;
+    }
+}
+
+.scroll-hide{
+    ::-webkit-scrollbar-thumb{
+        display: none;
+    }
+}
+
+.weather-search{
+    border-radius: 1.5rem;
+    background-color: #b4b8cdbb;
+    border-style: none;
+    color: black;
+}
+
+.weather-search:hover{
+    border-radius: 1.5rem;
+    background-color: #fafafabb;
+    border-style: none;
+    color: rgb(34, 64, 120);
+}
+
+.weather-loc{
+    border-radius: 1.5rem;
+    background-color: #f17924;
+    border-style: none;
+    color: white;
+}
+
+.weather-loc:hover{
+    border-radius: 1.5rem;
+    background-color: #fafafabb;
+    border-style: none;
+    color: #f17924;
+}
