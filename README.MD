@@ -10,7 +10,7 @@ Prompt Desk is a comprehensive frontdesk management web application developed us
 - **User Roles**: Admin, Employee, and Customer.
 
 ### User Registration
-- **Employee Registration**: Requires admin approval.
+- **Employee Registration**: Distinct sign-up page with necessary validations and Requires admin approval.
 - **Customer Registration**: Distinct sign-up page with necessary validations.
 - **Email Confirmation**: An email is sent to the user upon successful registration.
 
