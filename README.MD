@@ -56,6 +56,12 @@ Feel free to explore and contribute to the development of Prompt Desk!
 
 ### Project UI Images
 
+### Contact Page
+![Contact](uiux/Contact.png)
+
+### Weather Page
+![weather](uiux/weather.png)
+
 ### Login Screen
 ![Login](uiux/1.png)
 
@@ -70,9 +76,33 @@ Feel free to explore and contribute to the development of Prompt Desk!
 ![Sign up](uiux/5.png)
 
 ### Email
-![Email](uiux/5.png)
+![Email](uiux/emailinbox.PNG)
 
 ### Customer Pages
 ![CustHome](uiux/custHome.png)
+![CustProduct](uiux/custRegister.png)
+![CustRegister](uiux/custRegister.png)
+![CustStatus](uiux/custStatus.png)
+![CustProduct](uiux/custProduct.png)
+![CustBill](uiux/custBill.png)
 
-![CustHProduct](uiux/custRegister.png)
+### Profile Page
+![Profile](uiux/profile.png)
+
+### Notification Page
+![Profile](uiux/Notification%20(2).png)
+
+### Employee Pages
+![EmpHome](uiux/EmpHome.png)
+![EmpTask](uiux/empTask.png)
+![EmpResolve](uiux/empResolve.png)
+![EmpProduct](uiux/empProduct.PNG)
+![EmpBill](uiux/empBill.PNG)
+![EmpBilll](uiux/empBillEdit.png)
+![EmpStatus](uiux/empStatus.PNG)
+
+### Invoice 
+![Invoice](uiux/invoice.png)
+
+### Admin Pages 
+![Settings](uiux/AdminSettings.PNG)
